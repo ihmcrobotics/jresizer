@@ -44,7 +44,7 @@ publishing {
 				username "${nexus_username}"
 				password "${nexus_password}"
 			}
-			url "https://bengal.ihmc.us/nexus/content/repositories/releases"
+			url "https://bengal.ihmc.us/nexus/content/repositories/thirdparty"
 		}
 	}
 }
