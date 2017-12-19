@@ -44,7 +44,7 @@ publishing {
 				username = bintray_user
 				password = bintray_api_key
 			}
-			url "https://api.bintray.com/maven/ihmcrobotics/maven-release/jresizer"
+			url "https://api.bintray.com/maven/ihmcrobotics/maven-vendor/jresizer"
 		}
 	}
 }
