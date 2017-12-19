@@ -61,10 +61,10 @@ public class ResizableComponentDemo
       {
          protected Component createComponent()
          {
-            JTable table = new JTable(new Object[][] {
-                  { "[xxxxxxxxxxxxxxxxxxxxxxxxxxxxx]", "[yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy]", "[zzzzzzzzzzzzzzzzzzzzzzzzzzzz]" },
-                  { "[xxxxxxxxxxxxxx]", "[yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy]", "[zzzzzzzzzzzzzzzzzzzzzzz]" },
-                  { "[xxxxxxxxxx]", "[yyyyyyyyyy]", "[zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz]" } }, new String[] { "col1", "col2", "col3" });
+            JTable table = new JTable(
+                  new Object[][] {{"[xxxxxxxxxxxxxxxxxxxxxxxxxxxxx]", "[yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy]", "[zzzzzzzzzzzzzzzzzzzzzzzzzzzz]"},
+                        {"[xxxxxxxxxxxxxx]", "[yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy]", "[zzzzzzzzzzzzzzzzzzzzzzz]"},
+                        {"[xxxxxxxxxx]", "[yyyyyyyyyy]", "[zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz]"}}, new String[] {"col1", "col2", "col3"});
             table.setPreferredScrollableViewportSize(new Dimension(300, 200));
             return new JScrollPane(table);
          }

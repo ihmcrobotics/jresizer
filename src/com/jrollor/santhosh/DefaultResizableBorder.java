@@ -16,27 +16,21 @@
  */
 package com.jrollor.santhosh;
 
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Cursor;
-import java.awt.Graphics;
-import java.awt.Insets;
-import java.awt.Rectangle;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.MouseEvent;
-
-import javax.swing.SwingConstants;
 
 public class DefaultResizableBorder implements ResizableBorder
 {
    private int dist = 6;
 
-   int locations[] = { SwingConstants.NORTH, SwingConstants.SOUTH, SwingConstants.WEST, SwingConstants.EAST, SwingConstants.NORTH_WEST,
+   int locations[] = {SwingConstants.NORTH, SwingConstants.SOUTH, SwingConstants.WEST, SwingConstants.EAST, SwingConstants.NORTH_WEST,
          SwingConstants.NORTH_EAST, SwingConstants.SOUTH_WEST, SwingConstants.SOUTH_EAST, 0, // move
          -1, // no location
    };
 
-   int cursors[] = { Cursor.N_RESIZE_CURSOR, Cursor.S_RESIZE_CURSOR, Cursor.W_RESIZE_CURSOR, Cursor.E_RESIZE_CURSOR, Cursor.NW_RESIZE_CURSOR,
-         Cursor.NE_RESIZE_CURSOR, Cursor.SW_RESIZE_CURSOR, Cursor.SE_RESIZE_CURSOR, Cursor.MOVE_CURSOR, Cursor.DEFAULT_CURSOR, };
+   int cursors[] = {Cursor.N_RESIZE_CURSOR, Cursor.S_RESIZE_CURSOR, Cursor.W_RESIZE_CURSOR, Cursor.E_RESIZE_CURSOR, Cursor.NW_RESIZE_CURSOR,
+         Cursor.NE_RESIZE_CURSOR, Cursor.SW_RESIZE_CURSOR, Cursor.SE_RESIZE_CURSOR, Cursor.MOVE_CURSOR, Cursor.DEFAULT_CURSOR,};
 
    public DefaultResizableBorder(int dist)
    {

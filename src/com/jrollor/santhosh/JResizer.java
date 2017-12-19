@@ -16,21 +16,13 @@
  */
 package com.jrollor.santhosh;
 
-import java.awt.BorderLayout;
-import java.awt.Component;
-import java.awt.Cursor;
-import java.awt.Dimension;
-import java.awt.Point;
-import java.awt.Rectangle;
-import java.awt.event.MouseEvent;
-import java.util.ArrayList;
-
-import javax.swing.JComponent;
+import javax.swing.*;
 import javax.swing.border.Border;
 import javax.swing.event.MouseInputAdapter;
 import javax.swing.event.MouseInputListener;
-
-import sun.org.mozilla.javascript.ast.ParenthesizedExpression;
+import java.awt.*;
+import java.awt.event.MouseEvent;
+import java.util.ArrayList;
 
 public class JResizer extends JComponent
 {
@@ -103,10 +95,10 @@ public class JResizer extends JComponent
          width = 1;
       if (height < 1)
          height = 1;
-      
-      if((x + width) > parentSize.getWidth())
+
+      if ((x + width) > parentSize.getWidth())
          width = (int) parentSize.getWidth() - x;
-      if((y + height) > parentSize.getHeight())
+      if ((y + height) > parentSize.getHeight())
          height = (int) parentSize.getHeight() - y;
 
       setBounds(x, y, width, height);

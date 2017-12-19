@@ -1,6 +1,6 @@
 package com.jrollor.santhosh;
 
-import java.awt.Rectangle;
+import java.awt.*;
 
 public interface ResizeListener
 {

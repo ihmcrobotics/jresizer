@@ -16,9 +16,8 @@
  */
 package com.jrollor.santhosh;
 
-import java.awt.event.MouseEvent;
-
 import javax.swing.border.Border;
+import java.awt.event.MouseEvent;
 
 public interface ResizableBorder extends Border
 {
