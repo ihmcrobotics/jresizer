@@ -27,24 +27,24 @@ publishing {
 		mavenJava(MavenPublication) {
 
 			groupId 'com.jroller.santhosh'
-			artifactId 'JResizable'
-			version '1.0'
+			artifactId 'jresizer'
+			version '1.0.1'
 			from components.java
 			
 			artifact sourceJar {
 				classifier "sources"
 			}
 		}
-
 	}
 
 	repositories {
 		maven {
+			name = "BintrayRelease"
 			credentials {	
-				username "${nexus_username}"
-				password "${nexus_password}"
+				username = bintray_user
+				password = bintray_api_key
 			}
-			url "https://bengal.ihmc.us/nexus/content/repositories/thirdparty"
+			url "https://api.bintray.com/maven/ihmcrobotics/maven-release/jresizer"
 		}
 	}
 }
